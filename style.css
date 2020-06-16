@@ -1,0 +1,68 @@
+body {
+    overflow: hidden;
+    background-image: url('https://i.gifer.com/HDoX.gif');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .welcome {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    animation: Grow;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  .search {
+    outline: none;
+    font-family: monospace;
+    font-size: 16px;
+    width: 400px;
+    height: 25px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    animation: fadeIn;
+    animation-duration: 2s;
+  }
+  
+  @keyframes Grow {
+    0% {
+      transform: scale(0);
+      margin-top: 100px;
+      opacity: 0;
+    }
+  
+    100% {
+      transform: scale(1);
+      margin-top: 20px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
